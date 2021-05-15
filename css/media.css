@@ -1,0 +1,387 @@
+@media (max-width: 1600px) {
+    .info__inner {
+        padding-bottom: 0;
+    }
+
+    .gallery__content {
+        justify-content: center;
+    }
+
+    .gallery__content {
+
+        margin: 0 0 10px 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .price__inner {
+        column-gap: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    /* /////////////////////////////////// */
+    .header__container{
+        padding: 0;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .nav__btn {
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        position: relative;
+        z-index: 2;
+    }
+
+    .header__logo {
+        position: relative;
+        z-index: 2;
+    }
+
+    .header__top-inner {
+        justify-content: space-between;
+        padding: 0 15px;
+        height: 70px;
+    }
+
+    .nav__list {
+        text-align: center;
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0px;
+        background: #00B2A0;
+        transform: translateY(-200%);
+        transition: transform .2s linear;
+    }
+
+    .header__top-inner.header__top-inner--active .nav__list {
+        transform: translateY(0);
+    }
+
+    .header__top-inner.header__top-inner--active .nav__btn path,
+    .header__top-inner.header__top-inner--active .nav__btn rect {
+        fill: #fff;
+    }
+
+    .nav__item:not(:last-child) {
+        margin-right: 0;
+    }
+
+    ul.nav__list {
+        padding: 90px 15px 15px;
+        min-height: 100vh;
+    }
+
+    .nav__link {
+        display: block;
+        padding: 15px 0;
+    }
+
+    .nav__link:hover {
+        border-bottom: none;
+        color: #00B2A0;
+        transition: color 0.2s linear;
+    }
+
+    /* ////////////////////////////////// */
+
+    .title,
+    .title::after {
+        font-size: 40px;
+    }
+
+    .info {
+        background-image: none;
+    }
+
+    .info__inner {
+        width: 100%;
+    }
+
+    .info__text {
+        padding-right: 0;
+    }
+
+    .info__title {
+        text-align: center;
+    }
+
+    .gallery__item {
+        margin: 20px;
+    }
+
+    .gallery__content {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .slider__title {
+        font-size: 33px;
+        line-height: 46px;
+    }
+
+    .slider__title,
+    .slider__text {
+        width: 60%;
+    }
+
+    .price__inner {
+        column-gap: 20px;
+        flex-wrap: wrap;
+        display: block;
+    }
+
+    .price__items {
+        display: block;
+        padding-bottom: 0;
+    }
+
+    ul.price__item {
+        max-width: 500px;
+        margin: 0 auto 30px;
+        padding: 45px 31px 45px;
+        width: 100%;
+    }
+
+    .price {
+        padding-bottom: 100px;
+    }
+
+    .connection__inner {
+        flex-wrap: wrap;
+        display: block;
+    }
+
+    .form {
+        display: block;
+        max-width: 100%;
+        margin-bottom: 50px;
+        margin-right: 0;
+    }
+
+    .connection__info {
+        display: block;
+        max-width: 100%;
+        padding: 50px 20px
+    }
+
+    .form__button {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header,
+    .about,
+    .info,
+    .gallery,
+    .gallery__top,
+    .blockquote,
+    .gallery__video,
+    .blog,
+    .team,
+    .team__title,
+    .blog__title,
+    .connection,
+    .connection__inner {
+        margin-bottom: 100px;
+    }
+
+    .map {
+        margin: 100px 0;
+    }
+
+    .school {
+        padding: 100px 0 100px;
+    }
+
+    .info__title,
+    .form__title,
+    .price__title {
+        margin-bottom: 50px;
+    }
+
+    .price__title,
+    .info__title {
+        padding-top: 100px;
+    }
+
+    .header__title {
+        font-size: 150px;
+        line-height: 200px;
+    }
+
+    .header__text {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .title,
+    .title::after {
+        font-size: 36px;
+    }
+
+    .school__skill {
+        display: block;
+    }
+
+    .school__skill-text {
+        padding-top: 40px;
+        width: 100%;
+    }
+
+    .school__items {
+        display: block;
+    }
+
+    .school__item {
+        display: block;
+        width: 100%;
+    }
+
+    .school__item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .school__text {
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .gallery__info {
+        flex-wrap: wrap;
+    }
+
+    .gallery__info-item {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header__title {
+        font-size: 100px;
+        line-height: 150px;
+    }
+
+    .header__text {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .title,
+    .title::after {
+        font-size: 28px;
+    }
+
+    .about__text {
+        column-count: auto;
+    }
+
+    .about__text p {
+        min-height: 0;
+    }
+
+    .gallery__filter-btn button {
+        display: block;
+    }
+
+    .gallery__btn:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .gallery__filter-btn {
+        margin-bottom: 20px;
+    }
+
+    .blockquote p {
+        font-size: 23px;
+    }
+
+    .blockquote__author {
+        width: 70%;
+    }
+
+    .slider__title,
+    .slider__text {
+        width: 100%;
+    }
+
+    .slider__title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+
+
+@media (max-width: 425px) {
+    .team__items {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .team__item:not(:last-child) {
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .header__title {
+        font-size: 80px;
+        line-height: 100px;
+    }
+
+    .header__text {
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+    }
+
+    .title,
+    .title::after {
+        font-size: 23px;
+    }
+
+    .school__item-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .school__skill-items {
+        width: 250px
+    }
+
+    .gallery__button,
+    .form__button {
+        padding: 22px 60px;
+    }
+
+    .connection__social-list {
+        display: block;
+        text-align: center;
+    }
+
+    .connection__social-item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
